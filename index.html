@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GRAMMAR DEAF</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Sidebar -->
+            <nav class="sidebar" id="sidebar">
+                <ul>
+                    <li><a href="#" id="home-link">GRAMMAR DEAF</a></li>
+                    <li><a href="#" id="members-link">TEAM</a></li>
+                    <li><a href="#" id="about-link">ABOUT</a></li>
+                    <li><a href="#" id="contact-link">CONTACT</a></li>
+                    <li><a href="#" id="info-link">GAMES</a></li>
+                </ul>
+                <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+            </nav>
+    
+            <!-- Main Content -->
+            <div class="main-content">
+                <div id="home" class="page">
+                    <h1>GRAMMAR DEAF</h1>
+                    <textarea id="textInput" placeholder="Type your text here..." oninput="debouncedCheckGrammar()" aria-live="assertive" aria-label="Enter your text here for grammar checking"></textarea><br>
+                <div>
+                    <button class="button" onclick="checkGrammar()" aria-label="Check grammar">Check Grammar</button>
+                    <button class="button" onclick="clearText()" aria-label="Clear the text">Clear Text</button>
+                </div>
+                <div id="errorMessages" class="error-container" aria-live="polite"></div>
+                <div id="charCount" class="char-count"></div>
+                </div>
+                <div id="members" class="page hidden">
+                    <section class="team-section">
+                        <h2>Meet Our Team</h2>
+                        <div class="team-container">
+                            <div class="team-member">
+                                <img src="POGI.jpg" alt="Jules Paeste">
+                                <h3>Jules Paeste</h3>
+                                <p class="role">Programmer & Researcher</p>
+                                <p class="description">Jules is a quick learner and a natural when it comes to writing code. And he has strong programming skills and can solve difficult coding problems efficiently.</p>
+                                <div class="social-icons">
+                                    <a><button class="buttonz" onclick="window.open('https://www.facebook.com/profile.php?id=100082353215868&mibextid=ZbWKwL')">
+                                        <span class="icon">📘</span> Facebook
+                                      </button><button class="buttonz instagram-buttonz" onclick="window.open('https://www.instagram.com/jajrp04/profilecard/?igsh=MWVvamVvaXZ2b2d1NA==')">
+                                        <span class="icon">📸</span> Instagram
+                                      </button></a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="NESTY.jpg" alt="Nesty Bustamante">
+                                <h3>Nesty Bustamante</h3>
+                                <p class="role">Designer</p>
+                                <p class="description">Nesty is a talented designer with an eye for detail and creativity. Her design work stands out for its originality and strong aesthetic appeal.</p>
+                                <div class="social-icons">
+                                    <a><button class="buttonz" onclick="window.open('https://web.facebook.com/abisha132')">
+                                        <span class="icon">📘</span> Facebook
+                                      </button><button class="buttonz instagram-buttonz" onclick="window.open('https://www.instagram.com/abisha_cute?igsh=MWY1b3dzNDIwY3A1dQ==')">
+                                        <span class="icon">📸</span> Instagram
+                                      </button></a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="ARIANE.jpg" alt="Ariane Corder">
+                                <h3>Ariane Corder</h3>
+                                <p class="role">Supporter</p>
+                                <p class="description">Ariane is incredibly dependable, always ready to step in and assist whenever needed.</p>
+                                <div class="social-icons">
+                                    <a><button class="buttonz" onclick="window.open('https://web.facebook.com/profile.php?id=100091464919382')">
+                                        <span class="icon">📘</span> Facebook
+                                      </button><button class="buttonz instagram-buttonz" onclick="window.open('https://www.instagram.com/ar_iane4973?igsh=bDBnZGlmN3J0Z3gw')">
+                                        <span class="icon">📸</span> Instagram
+                                      </button></a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="SHANE.jpg" alt="Shane Cabrillos">
+                                <h3>Shane Cabrillos</h3>
+                                <p class="role">Supporter</p>
+                                <p class="description">Shane is always cheering others on, bringing positive energy and boosting everyone’s confidence.</p>
+                                <div class="social-icons">
+                                    <a><button class="buttonz" onclick="window.open('https://web.facebook.com/Slizettecabrillos81521')">
+                                        <span class="icon">📘</span> Facebook
+                                      </button><button class="buttonz instagram-buttonz" onclick="window.open('https://www.instagram.com/slizettecabrillos81521/profilecard/?igsh=MW9lc3ZiZ3B0OGFibQ==')">
+                                        <span class="icon">📸</span> Instagram
+                                      </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="about" class="page hidden">
+                    <div class="about-container">
+                        <h1 class="about-title">About Us</h1>
+                        
+                        <p class="about-paragraph">We are a team that wants to help the deaf community improve their grammar. We understand that many deaf individuals find it challenging to use proper grammar when writing in English. This can be due to the way they learn and use language. Although they may excel in other languages or spoken communication, grammar can still pose a challenge. That’s why we created a simple online tool to assist with correcting grammar mistakes in their writing.</p>
+                
+                        <p class="about-paragraph">Our website helps by automatically detecting and correcting grammar mistakes. It provides users with suggestions to improve their writing, helping them construct better sentences with the right grammar.</p>
+                
+                        <p class="about-paragraph">We believe that with better grammar, deaf individuals can communicate more clearly and confidently. Whether for school, work, or casual conversations, effective grammar helps ensure they are understood and valued.</p>
+                
+                        <p class="about-paragraph">Our goal is to make this tool accessible to everyone. By leveraging technology, we provide an easy and fast way to improve grammar. This ensures that anyone, regardless of background or ability, can write with confidence and clarity.</p>
+                
+                        <p class="about-paragraph">Our mission is to create a more inclusive world, enabling the deaf community to communicate with greater ease and confidence.</p>
+                    </div>
+                </div>
+                <div id="contact" class="page hidden">
+                    <div class="contact-section">
+                        <h1>Contact Us</h1>
+                        <p class="intro">We'd love to hear from you! Whether you have a question, need support, or simply want to share your feedback, we're here to assist you.</p>
+            
+                        <!-- Contact Information Section -->
+                        <div class="contact-details">
+                            <ul>
+                                <li><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:jpaeste_dstu@mstip.edu.ph">&nbsp;jpaeste_dstu@mstip.edu.ph</a></li>
+                                <li><i class="fas fa-phone-alt"></i><strong>Phone:</strong> <a href="tel:+639858735011">&nbsp;+63 985 873 5011</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> <span>&nbsp;88 Diamond Blvd POGI, Manila, Philippines</span></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Contact Form -->
+                        <p class="intro">Alternatively, you can fill out the form below, and we’ll get back to you as soon as possible:</p>
+                        <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+            
+                        <p class="closing">Feel free to reach out to us through any of the channels above. We look forward to connecting with you!</p>
+                    </div>
+                </div>
+                <div id="info" class="page hidden">
+                    <div class="deep-word-code-container">
+                        <!-- Welcome Screen -->
+                        <div id="welcome-deep-word-screen">
+                          <h1 class="deep-word-code-header">Welcome to the Deep Word Grammar Quiz Game!</h1>
+                          <p class="deep-word-code-description">Test your grammar skills and see how well you know English grammar!</p>
+                          <button id="start-deep-word-btn" class="start-deep-word-btn">Start Quiz</button>
+                        </div>
+                    
+                        <!-- Quiz Container (Initially Hidden) -->
+                        <div id="deep-word-quiz-container" style="display: none;">
+                          <p class="time-countdown" id="deep-word-timer">Time Left: <span id="deep-word-time-left">10</span> sec</p>
+                          <p id="deep-word-question-text" class="deep-word-question"></p>
+                          <ul id="deep-word-options" class="deep-word-option-list"></ul>
+                          <div class="deep-word-progress-bar">
+                            <div id="deep-word-progress" class="deep-word-progress"></div>
+                          </div>
+                          <button id="next-deep-word-btn" class="next-deep-word-btn-container next-deep-word-btn">Next Question</button>
+                          <p id="deep-word-result" class="end-result"></p>
+                        </div>
+                    
+                        <!-- Final Score (Initially Hidden) -->
+                        <div id="final-deep-word-score" style="display: none;">
+                          <h2 class="final-score-deep-word">Game Over!</h2>
+                          <p>Your final score: <span id="deep-word-score"></span> / <span id="total-deep-word-questions"></span></p>
+                          <div class="deep-word-score-section">
+                            <button class="restart-deep-word-btn next-deep-word-btn" onclick="restartDeepWordGame()">Restart Game</button>
+                            <button class="quit-deep-word-btn next-deep-word-btn" onclick="quitDeepWordGame()">Quit</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+
+    <script src="script.js"></script>
+    </body>
+</html>
